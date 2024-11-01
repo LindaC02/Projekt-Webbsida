@@ -1,0 +1,77 @@
+<html>
+<head><!--Behållare för alla neta-tags & information som ej syns i webbsidan-->
+   <meta charset="utf-8"> <!-- Dokumentets teckenuppsättning-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Linda Chamoun"> <!-- Skaparen av hemsidan-->
+   <title>Bookings</title> <!-- Dokumentets titel, visas i webbläsarens sidflik-->
+   <link rel="stylesheet" href="../css/main.css" type="text/css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Länk till externa stilmallar-->
+   <link rel="icon" type="image/x-icon" href="../images/eminemlogo.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" 
+rel="stylesheet"> <!--Länk till externa stilmallar-->
+</head>
+
+ <body>
+     <header class="header"> <!--Header med logga samt navigationbar men länkar till andra interna sidor-->
+        <a href="../../index.html" class="logo"><img src="../images/eminemlogo.png" width="30"></a> <!--Navigationbarens loggan-->
+        <nav class="navbar"> <!--Länk till de andra interna sidorna-->
+            <a href="../../index.html">Home Page</a>
+            <a href="../html/tour-dates.html">Tour Dates</a>
+        </nav>
+    </header>
+
+    <div class="content"> <!--Sidans rubrik samt underrubrik-->
+        <h2>Bookings</h2>
+        <div class="line"></div>
+        <h3>For booking requests, please fill out the form below:</h3>
+        </div>
+
+
+    
+    <div class="form-container"> <!--Formuläret-->
+
+        <form action="https://formspree.io/f/xgveaape"
+        method="POST"> <!--Länk till formspree.io där mitt formulär är länkat till-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name.." required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email.." required>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" placeholder="Number.." required>
+
+        
+        <label for="place">Place:</label>
+        <input type="place" id="place" placeholder="Place.." required>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Message.." rows="4" required></textarea>
+        <input type="submit" value="Send Message">
+
+    </form>
+    </div>
+
+        <footer> <!--Footer med sociala medier ikoner som är länkade till artistens sociala medier-->
+        <div class="footerContainer">
+         <div class="socialIcons">
+             <a href="https://www.instagram.com/eminem/"><i class="fa-brands fa-instagram"></i></a>
+             <a href="https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR"><i class="fa-brands fa-spotify"></i></a>
+             <a href="https://twitter.com/eminem?lang=sv"><i class="fa-brands fa-twitter"></i></a>
+             <a href="https://www.youtube.com/@eminem"><i class="fa-brands fa-youtube"></i></a>
+
+             </div>
+             <div class="footerBottom"> <!--Footer med copyright loggan samt mitt namn-->
+                 <p>© Linda Chamoun 2024</p>
+             </div>
+         </footer>
+        </div>
+
+ </body>
+</html>
